@@ -1,0 +1,28 @@
+### Get Users
+GET http://localhost:5000/users
+Content-Type: "application/json"
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE2NTAxODY0NjQsInVzZXJJZCI6MX0.nABrlPwDsVFgngHIdJYpTTqdaxoCxEGIDaYH6xS1kHE
+
+### User FindByID
+GET http://localhost:5000/users/1
+
+### create user
+POST http://localhost:5000/users
+Content-Type: "application/json"
+
+{
+  "nome": "Thiago",
+  "nick": "tporto",
+  "email": "tporto88@gmail.com",
+  "senha": "123466"
+}
+
+
+### login
+POST http://localhost:5000/login
+Content-Type: "application/json"
+
+{
+  "email": "tporto88@gmail.com",
+  "senha": "123466"
+}
